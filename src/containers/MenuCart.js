@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Menu from './Menu';
 import Cart from './Cart';
 
@@ -21,6 +21,16 @@ function MenuCart() {
     const [cartData, setCartData] = useState({})
     
     const [cartTotal, setCartTotal] = useState(0)
+
+    useEffect(() => {
+        let total = 0
+        Object.keys(cartData).map((sku, _) => {
+            let qty = cartData[sku]
+            let price = menuData[sku].price
+            total += qty * price
+        })
+        setCartTotal(total)
+    }, [cartData])
 
     const addToCart = sku => {
         let newCart = { ...cartData } 
