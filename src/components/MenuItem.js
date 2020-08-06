@@ -2,11 +2,11 @@ import React from 'react';
 
 function MenuItem() {
     return (
-        <div class="menu-item">
-            <span class="menu-text">
+        <div className="menu-item">
+            <span className="menu-text">
                 Mouse - ₦ 199
             </span>
-            <span class="menu-action">
+            <span className="menu-action">
                 <button>+</button>
             </span>
         </div>
