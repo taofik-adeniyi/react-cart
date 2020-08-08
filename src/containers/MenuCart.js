@@ -64,7 +64,7 @@ function MenuCart() {
         total={cartTotal} 
         menuData={menuData} 
         cartData={cartData} 
-        removeFromCart={removeFromCart} 
+        removeFromCart={removeFromCart}
         />
     </div>
     )
