@@ -65,7 +65,7 @@ function MenuCart() {
         menuData={menuData} 
         cartData={cartData} 
         removeFromCart={removeFromCart} 
-        />1234567890
+        />
     </div>
     )
 }
